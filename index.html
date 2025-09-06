@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARKIN PAYMENTS SYSTEM v2.1 - ACQUIRING MAINFRAME</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <div class="header-text">*** ACQUIRING SYSTEM MAINFRAME - SEATTLE NODE ***</div>
+            <div class="status-indicators">
+                <span class="indicator active">ONLINE</span>
+                <span class="indicator">ISO-8583</span>
+                <span class="indicator">PCI-DSS</span>
+            </div>
+        </div>
+        
+        <div class="terminal-screen">
+            <div id="boot-sequence" class="boot-sequence">
+                <pre class="ascii-logo">
+╔══════════════════════════════════════════════════════════════╗
+║  ███╗   ███╗ █████╗ ██████╗ ██╗  ██╗██╗███╗   ██╗          ║
+║  ████╗ ████║██╔══██╗██╔══██╗██║ ██╔╝██║████╗  ██║          ║
+║  ██╔████╔██║███████║██████╔╝█████╔╝ ██║██╔██╗ ██║          ║
+║  ██║╚██╔╝██║██╔══██║██╔══██╗██╔═██╗ ██║██║╚██╗██║          ║
+║  ██║ ╚═╝ ██║██║  ██║██║  ██║██║  ██╗██║██║ ╚████║          ║
+║  ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝          ║
+║                                                              ║
+║           PAYMENT PROCESSING PROFESSIONAL SYSTEM             ║
+╚══════════════════════════════════════════════════════════════╝
+                </pre>
+                <div class="boot-text">
+                    <div class="boot-line">INITIALIZING PAYMENT GATEWAY...</div>
+                    <div class="boot-line">LOADING ISO-8583 PARSER...</div>
+                    <div class="boot-line">CONNECTING TO CARD NETWORKS...</div>
+                    <div class="boot-line">ESTABLISHING SECURE CHANNEL...</div>
+                    <div class="boot-line">SYSTEM READY.</div>
+                </div>
+            </div>
+
+            <div id="main-terminal" class="main-terminal hidden">
+                <div class="terminal-output" id="terminal-output">
+                    <div class="welcome-message">
+                        <pre>
+MARKIN PAYMENTS MAINFRAME v2.1
+Copyright (c) 2024 - Authorized Personnel Only
+PCI-DSS Compliant | EMV Certified | ISO-8583 Compatible
+────────────────────────────────────────────────────────────
+Type 'HELP' for available commands or select a transaction type:
+                        </pre>
+                    </div>
+                </div>
+                
+                <div class="command-line">
+                    <span class="prompt">TXN://MAINFRAME/> </span>
+                    <div style="position: relative; flex: 1;">
+                        <input type="text" id="command-input" class="command-input" autofocus>
+                        <span class="cursor" id="cursor"></span>
+                    </div>
+                </div>
+                
+                <div class="command-hints">
+                    <span class="hint-label">QUICK ACCESS:</span>
+                    <span class="command-hint" data-command="AUTH">ABOUT</span>
+                    <span class="hint-separator">|</span>
+                    <span class="command-hint" data-command="TXN">EXPERIENCE</span>
+                    <span class="hint-separator">|</span>
+                    <span class="command-hint" data-command="INQUIRY">SKILLS</span>
+                    <span class="hint-separator">|</span>
+                    <span class="command-hint" data-command="SETTLE">CONTACT</span>
+                    <span class="hint-separator">|</span>
+                    <span class="command-hint" data-command="RESUME">RESUME</span>
+                    <span class="hint-separator">|</span>
+                    <a href="https://linkedin.com/in/mattarkin" target="_blank" class="command-hint linkedin-link">LINKEDIN</a>
+                    <span class="hint-separator">|</span>
+                    <span class="command-hint" data-command="HELP">HELP</span>
+                </div>
+            </div>
+
+            <div id="iso-message" class="iso-message hidden">
+                <div class="message-header">
+                    ╔═══════════════════════════════════════════════════════════════╗
+                    ║                   ISO-8583 MESSAGE TRACE                      ║
+                    ╚═══════════════════════════════════════════════════════════════╝
+                </div>
+                <div class="message-content" id="iso-content"></div>
+            </div>
+        </div>
+
+        <div class="terminal-footer">
+            <div class="footer-stats">
+                <span id="current-time">00:00:00</span>
+                <span>|</span>
+                <span>UPTIME: <span id="uptime">00:00:00</span></span>
+                <span>|</span>
+                <span>TXN: <span id="txn-count">000000</span></span>
+                <span>|</span>
+                <span>APPROVAL RATE: 99.97%</span>
+            </div>
+        </div>
+    </div>
+
+    <audio id="beep-sound" preload="auto">
+        <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhBz2Ew/LWgjMGHm7A7+OZURE" type="audio/wav">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
