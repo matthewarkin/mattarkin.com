@@ -120,7 +120,9 @@ const commands = {
     'RESUME': downloadResume,
     'ISO': showISOCommands,
     'PING': pingNetworks,
-    'BATCH': showBatchSummary
+    'BATCH': showBatchSummary,
+    'MALORT': showMalortEasterEgg,
+    'CHICAGO': showMalortEasterEgg
 };
 
 // Initialize terminal
@@ -614,3 +616,57 @@ setInterval(() => {
         }, 50);
     }
 }, 5000);
+
+function showMalortEasterEgg() {
+    const output = document.getElementById('terminal-output');
+    
+    // Initial processing message
+    const processing = document.createElement('div');
+    processing.className = 'output-line';
+    processing.style.color = '#00ff00';
+    processing.textContent = '► INITIATING CHICAGO PROTOCOL...';
+    output.appendChild(processing);
+    
+    setTimeout(() => {
+        const malort = document.createElement('div');
+        malort.className = 'output-line';
+        malort.innerHTML = `
+<pre style="color: #00ff00;">
+╔════════════════════════════════════════════════════════════════╗
+║              🥃 MALÖRT SUBROUTINE ACTIVATED 🥃                 ║
+╠════════════════════════════════════════════════════════════════╣
+║                                                                ║
+║  TRANSACTION TYPE: CHICAGO HANDSHAKE                          ║
+║  MERCHANT CATEGORY: SPIRIT OF WORMWOOD                        ║
+║  FLAVOR PROFILE: TASTES LIKE REGRET                           ║
+║                                                                ║
+║  "Jeppson's Malört, when you need to unfriend                ║
+║   someone in person."                                         ║
+║                                                                ║
+║  MATT'S MALÖRT STATS:                                         ║
+║  ├─ SHOTS CONSUMED: CLASSIFIED                                ║
+║  ├─ CONVERTS MADE: NUMEROUS                                   ║
+║  ├─ CHICAGO TRIPS: MANDATORY SHOT REQUIRED                    ║
+║  └─ REPUTATION: "THAT GUY WHO LIKES MALÖRT"                   ║
+║                                                                ║
+║  AUTHORIZATION: APPROVED (SOMEHOW)                            ║
+║  WARNING: FACE MAY CONTORT INVOLUNTARILY                      ║
+║                                                                ║
+║  "I'll have another!" - Matt, probably                        ║
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+SYSTEM NOTICE: Your transaction has been flagged as "BRAVE"
+</pre>`;
+        output.appendChild(malort);
+        
+        // Add a glitch effect for fun
+        document.body.style.filter = 'hue-rotate(30deg)';
+        setTimeout(() => {
+            document.body.style.filter = 'brightness(1)';
+        }, 200);
+        
+        output.scrollTop = output.scrollHeight;
+        document.getElementById('command-input').focus();
+    }, 800);
+}
