@@ -633,26 +633,26 @@ function showMalortEasterEgg() {
         malort.innerHTML = `
 <pre style="color: #00ff00;">
 ╔════════════════════════════════════════════════════════════════╗
-║              🥃 MALÖRT SUBROUTINE ACTIVATED 🥃                 ║
+║              🥃 MALÖRT SUBROUTINE ACTIVATED 🥃                  ║
 ╠════════════════════════════════════════════════════════════════╣
 ║                                                                ║
-║  TRANSACTION TYPE: CHICAGO HANDSHAKE                          ║
-║  MERCHANT CATEGORY: SPIRIT OF WORMWOOD                        ║
-║  FLAVOR PROFILE: TASTES LIKE REGRET                           ║
+║  TRANSACTION TYPE: CHICAGO HANDSHAKE                           ║
+║  MERCHANT CATEGORY: SPIRIT OF WORMWOOD                         ║
+║  FLAVOR PROFILE: TASTES LIKE REGRET                            ║
 ║                                                                ║
-║  "Jeppson's Malört, when you need to unfriend                ║
-║   someone in person."                                         ║
+║  "Jeppson's Malört, when you need to unfriend                  ║
+║   someone in person."                                          ║
 ║                                                                ║
-║  MATT'S MALÖRT STATS:                                         ║
-║  ├─ SHOTS CONSUMED: CLASSIFIED                                ║
-║  ├─ CONVERTS MADE: NUMEROUS                                   ║
-║  ├─ CHICAGO TRIPS: MANDATORY SHOT REQUIRED                    ║
-║  └─ REPUTATION: "THAT GUY WHO LIKES MALÖRT"                   ║
+║  MATT'S MALÖRT STATS:                                          ║
+║  ├─ SHOTS CONSUMED: CLASSIFIED                                 ║
+║  ├─ CONVERTS MADE: NUMEROUS                                    ║
+║  ├─ CHICAGO TRIPS: MANDATORY SHOT REQUIRED                     ║
+║  └─ REPUTATION: "THAT GUY WHO LIKES MALÖRT"                    ║
 ║                                                                ║
-║  AUTHORIZATION: APPROVED (SOMEHOW)                            ║
-║  WARNING: FACE MAY CONTORT INVOLUNTARILY                      ║
+║  AUTHORIZATION: APPROVED (SOMEHOW)                             ║
+║  WARNING: FACE MAY CONTORT INVOLUNTARILY                       ║
 ║                                                                ║
-║  "I'll have another!" - Matt, probably                        ║
+║  "I'll have another!" - Matt, probably                         ║
 ║                                                                ║
 ╚════════════════════════════════════════════════════════════════╝
 
